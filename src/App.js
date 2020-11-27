@@ -1,13 +1,17 @@
-import './App.css'
-import  Grid from 'semantic-ui-react'
+import NavBar from "./components/NavBar";
+import Home from "./page/Home";
+import {Container} from "semantic-ui-react";
+import {Route} from "react-router-dom";
 
 function App() {
+
     return (
-        <Grid container={true}>
-            <Grid.Row centered={true}>
-                React
-            </Grid.Row>
-        </Grid>
+        <>
+            <NavBar/>
+            <Container className={'main'}>
+                <Route path={'/'} component={Home} />
+            </Container>
+        </>
     )
 }
 

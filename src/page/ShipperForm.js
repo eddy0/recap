@@ -21,7 +21,7 @@ const ShipperForm = () => {
                         name={'address'}
                         placeholder={'Please input address'}
                     />
-                    <Form.Group>
+                    <Form.Group widths={2}>
 
                         <MyTextInput
                             required={true}
@@ -36,7 +36,7 @@ const ShipperForm = () => {
                             placeholder={'Last Name'}
                         />
                     </Form.Group>
-                    <Form.Group>
+                    <Form.Group widths={3}>
 
                         <MyTextInput
                             required={true}

@@ -9,6 +9,7 @@ body {
 
 
 .ui.fixed.menu {
+    height: 100px!important;
     /*background-color: #eaeaea;*/
     /*color: #000;*/
     /*background-image: linear-gradient(to right, rgb(24, 42, 115) 0%, rgb(33, 138, 174));*/

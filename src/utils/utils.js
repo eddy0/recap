@@ -1,3 +1,6 @@
 const log = console.log.bind(console)
 
-export {log}
+const randomId = () => Math.random().toString(36).substring(7);
+
+
+export {log, randomId}

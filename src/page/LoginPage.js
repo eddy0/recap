@@ -5,7 +5,7 @@ import {Button, Divider, Form, FormField, Header} from 'semantic-ui-react'
 function LoginPage(props) {
     return (
         <div>
-            w<Header as={'h1'}>Please Login</Header>
+            <Header as={'h1'}>Please Login</Header>
             <Divider/>
             <Form>
                 <Form.Field required={true}>

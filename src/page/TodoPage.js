@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button, Card, Divider, Grid, Input, Menu} from 'semantic-ui-react'
-import {log, randomId} from '../utils/utils'
+import {randomId} from '../utils/utils'
 import {Link, useLocation, useHistory} from 'react-router-dom'
 import queryString from 'query-string'
 
@@ -20,7 +20,6 @@ function TodoPage(props) {
             _storage = JSON.parse(_storage)
         }
         setList(_storage)
-
     }, [])
 
 
@@ -94,8 +93,8 @@ function TodoPage(props) {
 
     let list = [...todoList]
     let filter = queryString.parse(location.search)
-    let history = useHistory()
 
+    let history = useHistory()
 
     if ('filter' in filter) {
         let key = filter['filter']
